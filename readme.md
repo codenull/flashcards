@@ -5,3 +5,9 @@
 ```
 python 3.11
 ```
+
+## Установка
+```
+python -m pip install -r requirements.txt
+python manage.py migrate
+```
