@@ -1,7 +1,7 @@
 version: '3.1'
 
+# Набор сервисов для поднятия окружения разработки.
 services:
-
   postgres:
     image: postgres:15.1-alpine
     restart: always
