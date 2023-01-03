@@ -7,6 +7,17 @@ python 3.11
 ```
 
 ## Настройка
+Создать базу, для posgtresql можно так:
+```sql
+CREATE USER cards WITH PASSWORD 'cardscards';
+ALTER ROLE cards SET client_encoding TO 'utf8';  
+ALTER ROLE cards SET default_transaction_isolation TO 'read committed';  
+ALTER ROLE cards SET timezone TO 'UTC';
+
+CREATE DATABASE flashcards owner cards;
+GRANT ALL PRIVILEGES ON DATABASE flashcards TO cards;
+```
+
 Для запуска проекта необходимо настроить переменные окружения через `.env` файл в корне проекта:
 ```env
 DEBUG=True
