@@ -1,7 +1,9 @@
 from django.urls import path
+from .views import index
 
 
 urlpatterns = [
+    path('', index , name='index')
     # path('', TemplateView.as_view(template_name='cards/base.html'), name='home'),
     # path('', CardListView.as_view(), name='card-list'),
     # path('new', CardCreateView.as_view(), name='card-create'),
