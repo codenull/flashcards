@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-2">
+    <div class="card" style="width: 35rem;">
+        <div class="card-body">
+    
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="text" class="form-control" id="email" placeholder="mymail@mail.com">
+            </div>
+            <div class="mb-3">
+                <label for="login" class="form-label">Login</label>
+                <input type="text" class="form-control" id="login" placeholder="My login">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" class="form-control" id="password" placeholder="My login">
+            </div>
+            <div class="mb-3">
+                <label for="confirmpassword" class="form-label">Confirm Password</label>
+                <input type="text" class="form-control" id="confirmpassword" placeholder="My password">
+            </div>
+            <div class="invalid-feedback">
+                You must agree before submitting.
+            </div>
+    
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Accept Rules
+                </label>
+            </div>
+    
+            <button class="btn btn btn-primary">
+                Registration
+            </button>
+    
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
