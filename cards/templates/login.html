@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center mt-2">
+    <div class="card" style="width: 35rem;">
+        <div class="card-body">
+    
+            <div class="mb-3">
+                <label for="login" class="form-label">Login</label>
+                <input type="text" class="form-control" id="login" placeholder="My login">
+            </div>
+            
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="text" class="form-control" id="password" placeholder="My login">
+            </div>
+    
+            <button class="btn btn btn-primary">
+                Login
+            </button>
+    
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
